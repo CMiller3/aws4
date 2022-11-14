@@ -4,7 +4,7 @@ var aws4 = exports,
     crypto = require('crypto'),
     lru = require('./lru'),
     credentialsCache = lru(1000)
-
+var Buffer = require('buffer/').Buffer
 // http://docs.amazonwebservices.com/general/latest/gr/signature-version-4.html
 
 function hmac(key, string, encoding) {
